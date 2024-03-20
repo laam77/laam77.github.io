@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Codificador de Texto</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo-alura" src="assets/logo-alura.png" alt="Logo da Alura" />
+      <h1>Codificador de Texto</h1>
+    </header>
+    <main class="apresentacao">
+      <section>
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto  aqui..."
+        ></textarea>
+        <div class="informacao">
+          <img
+            class="informacao-imagem"
+            src="assets/exclamação.png"
+            alt="Exclamacao"
+          />
+          <h6 class="informacao-texto">
+            Escreva apenas letras maiusculas e sem acento!
+          </h6>
+        </div>
+
+        <div class="botoes">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section>
+        <div>
+          <textarea
+            id="encriptado"
+            class="mensagem"
+            cols="20"
+            rows="10"
+          ></textarea>
+          <button class="btn-copiar" onclick="btnCopiar()">Copie o texto aqui</button>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">Desenvolvedor: Luis Morillo</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

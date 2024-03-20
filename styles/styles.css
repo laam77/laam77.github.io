@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+
+:root {
+  --cor-preto: #000000;
+  --cor-fundo: #2C3333;
+  --cor-terciaria: #0E8388;
+  --cor-hover: #000000;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  background-color: var(--cor-fundo);
+  color: var(--cor-preto);
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  gap: 40px;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+.text-area {
+  border: none;
+  color: var(--cor-terciaria);
+  margin-top: 98px;
+  text-transform: lowercase;
+}
+
+::placeholder {
+  color: var(--cor-terciaria);
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensagem {
+  background-color: #CBE4DE;
+  background-image: url(/assets/boneco.png);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: var(--cor-terciaria);
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed;
+  height: 50%;
+}
+
+.mensagem:focus {
+  outline: none;
+}
+
+.informacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 32px;
+}
+.informacao-texto {
+  color: var(--cor-hover);
+  font-size: 18px;
+}
+.botoes {
+  display: flex;
+  margin-top: 18px;
+}
+
+.btn-encriptar {
+  font-size: medium;
+  background-color: var(--cor-terciaria);
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 24px;
+  color: var(--cor-branco);
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+}
+
+.btn-desencriptar {
+  font-size: medium;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 24px;
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 328px;
+}
+
+.btn-copiar {
+  font-size: small;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 24px;
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  height: 67px;
+  margin-left: 188px;
+  margin-top: 420px;
+  position: absolute;
+  width: 328px;
+}
+
+.rodape {
+  color: var(--cor-preto);
+  background-color: var(--cor-terciaria);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: larger;
+  font-weight: 400;
+}
